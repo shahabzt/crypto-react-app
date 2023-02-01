@@ -1,11 +1,10 @@
 import spinner from '../../gif/spinner.gif'
+import ReactLoading from 'react-loading';
 
-export function Loading (){
+export function Loading() {
     return (
-        <div>
-            <img src={spinner} alt="loading" />
-
-            <h1>Wait a Moment...</h1>
+        <div style={{display :"flex" , "justifyContent" : "center" , "alignItems": "center" , margin:"80px"}}>
+            <ReactLoading  type={"spin"} color={"#3498db"} height={'5%'} width={'5%'}  />
         </div>
     )
 }
