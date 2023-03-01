@@ -7,8 +7,8 @@ import { Loading } from "./loading";
 
 
 export function Landing() {
-    const [search, setSearch] = useState("")
-    const [coins, setCoins] = useState([])
+    const [search, setSearch] = useState("");
+    const [coins, setCoins] = useState([]);
     useEffect(() => {
         const fetchApi = async () => {
             const data = await getCoin()
@@ -17,6 +17,8 @@ export function Landing() {
         fetchApi()
 
     }, [])
+    
+
     function searchHandler(e) {
         setSearch(e.target.value)
     }

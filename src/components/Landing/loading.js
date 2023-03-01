@@ -1,10 +1,11 @@
-import spinner from '../../gif/spinner.gif'
 import ReactLoading from 'react-loading';
+import { Container } from './index.styled';
 
 export function Loading() {
     return (
-        <div style={{display :"flex" , "justifyContent" : "center" , "alignItems": "center" , margin:"80px"}}>
-            <ReactLoading  type={"spin"} color={"#3498db"} height={'5%'} width={'5%'}  />
-        </div>
+
+        <Container>
+            <ReactLoading type={"spin"} color={"#3498db"} height={'5%'} width={'5%'} />
+        </Container>
     )
 }
