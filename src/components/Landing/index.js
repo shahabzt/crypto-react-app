@@ -4,6 +4,10 @@ import { CoinPaint } from "./coin.paint";
 import styles from "./landing.module.css"
 import { Loading } from "./loading";
 
+//styles
+
+import { Input } from "./index.styled";
+
 
 
 export function Landing() {
@@ -18,19 +22,20 @@ export function Landing() {
 
     }, [])
     
-
     function searchHandler(e) {
         setSearch(e.target.value)
     }
     const searchCoins = coins.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
+    const sortedCoins = searchCoins.sort((b,a)=> a.market_cap_change_percentage_24h - b.market_cap_change_percentage_24h
 
+    )
     return (
         <>
 
-            <input className={styles.input} type="text" placeholder="Search" value={search} onChange={searchHandler} />
+            <Input className={styles.input} type="text" placeholder="Search" value={search} onChange={searchHandler} />
             {coins.length ? <div className={styles.coinContainer}>
 
-                {searchCoins.map((coin) => {
+                {sortedCoins.map((coin) => {
                     return <CoinPaint key={coin.id}
                         name={coin.name}
                         image={coin.image}

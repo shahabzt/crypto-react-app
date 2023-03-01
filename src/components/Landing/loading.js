@@ -5,7 +5,7 @@ export function Loading() {
     return (
 
         <Container>
-            <ReactLoading type={"spin"} color={"#3498db"} height={'5%'} width={'5%'} />
+            <ReactLoading type={"spin"} color={"#212529"} height={'5%'} width={'5%'} />
         </Container>
     )
 }

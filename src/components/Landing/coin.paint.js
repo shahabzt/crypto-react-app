@@ -11,9 +11,8 @@ export function CoinPaint({ name, image, symbol, price, marketCap, priceChange }
             <Symbol  >{symbol}</Symbol>
             <CurrentPrice  >$ {price.toLocaleString()}</CurrentPrice>
 
-            {priceChange >0 ? <GreenPrice> {priceChange}% </GreenPrice> : <RedPrice> {priceChange} % </RedPrice>}
+            {priceChange > 0 ? (<GreenPrice> {priceChange.toFixed(2)} % </GreenPrice>) : (<RedPrice> {priceChange} </RedPrice>)}
              
-            
             <Span >$ {marketCap.toLocaleString()}</Span>
 
         </Container>

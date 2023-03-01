@@ -49,3 +49,14 @@ width: 100px;
 export const Span = styled.span`
 
 `
+
+export const Input = styled.input`
+width: 300px;
+margin-top: 50px;
+border: 1px solid silver;
+border-radius: 5px;
+height: 20px;
+padding: 5px;
+background-color: #f6f6f6;
+transition: all 0.2s ease;
+`
