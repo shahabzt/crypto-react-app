@@ -1,11 +1,15 @@
+//service
 import { getCoin } from "../../service/api";
+
+//Hooks
 import { useEffect, useState } from "react";
+
+//Components
 import { CoinPaint } from "./coin.paint";
-import styles from "./landing.module.css"
 import { Loading } from "./loading";
 
 //styles
-
+import styles from "./landing.module.css";
 import { Input } from "./index.styled";
 
 

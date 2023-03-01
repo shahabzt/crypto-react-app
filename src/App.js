@@ -1,5 +1,4 @@
 import './App.css';
-// import Basic from './forms/index';
 
 import { Landing } from './components/Landing';
 import "./App.css"
