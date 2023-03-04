@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const CoinContainer = styled.div`
+margin: 50px auto;
+border: 1px solid silver;
+border-radius: 10px;
+width: fit-content;
+background-color: #f6f6f6;
+`
+
 export const Container = styled.div`
     display: flex;
     align-items: center;
@@ -52,7 +60,7 @@ export const Span = styled.span`
 
 export const Input = styled.input`
 width: 300px;
-margin-top: 50px;
+margin: 50px;
 border: 1px solid silver;
 border-radius: 5px;
 height: 20px;
